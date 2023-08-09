@@ -321,3 +321,39 @@ h3{
         
     }
 }
+
+
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 99;
+
+    img{
+        max-width: 65px;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+ }
+ .btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top:8px;
+    left:-144px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.5s;
+ }
+
+ .btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+ }
